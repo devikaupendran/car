@@ -1,0 +1,278 @@
+*{
+	margin:0;
+	box-sizing:border-box;
+}
+
+/*logo image for header*/
+.logo img
+{
+	margin-left: 30px;
+	width:120px;
+	height:130px;
+}
+
+/*header background*/
+header
+{
+	background-color: black;
+}
+
+/*header section*/
+.header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+
+}
+
+/*header wesite name*/
+.header .heading
+{
+	margin-left:40px;
+	position:absolute;
+	left:127px;
+	right:40%;
+	color:white;
+	font-size: 30px;
+}
+
+/*website slogan*/
+.heading p 
+{
+	font-size: 25px;
+}
+
+/*navigation content*/	
+.header .nav ul
+{
+	display: flex;
+	flex-direction: row;
+	gap:30px;
+
+}
+
+/*navigation links about,home,contact*/
+.nav a
+{
+	display:block;
+	margin-right:42px ;
+	text-decoration: none;
+	font-size: 25px;
+	color: white;
+
+}
+
+/*navigation links about,home,contact hover*/
+
+.nav a:hover
+{
+	background-color: rgb(70,72,72);
+	font-size: 27px;
+	padding:12px 20px;
+}
+
+
+				/*body separated into 2 sections*/
+
+/*left section for image*/
+.left-section
+{
+	height:100vh;
+	width:60%;
+	float: left;
+	background-image: url("background-img.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	
+}
+
+/*right section for login*/
+
+.right-section
+{
+	float: right;
+	height:100vh;
+	width:40%;
+	background-color:black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+
+			/*login box*/
+
+.login
+{
+	border: 1px solid white;
+	border-radius: 20.9px;
+	box-shadow: 0 0 20px white;
+	width:420px;
+	background-color: black;
+	color:white;
+	font-family: poppins,sans-serif;
+	padding:30px 40px;
+}
+
+/*login heading*/
+.login h1
+{
+	font-size:36px;
+	text-align: center;
+}
+
+/*input boxes username and password*/
+.login .input-box
+{
+	position:relative;
+	margin:30px 0;
+/*	background-color: yellow;*/
+	width:100%;
+	height: 50px;
+}
+
+/*input area*/
+.input-box input
+{
+	width:100%;
+	height:100%;
+	background:transparent;
+	border:none;
+	outline:none;
+	border:1px solid rgba(255,255,255,0.3);
+	border-radius:40px;
+}
+
+/*placeholder inside input box*/
+input::placeholder
+{
+	color:white;
+	padding:20px 15px;
+	font-size: 17px;
+}
+
+/*text inside input box*/
+.input-box input[type=text]
+{
+	padding-left: 13px;
+	font-size:21px;
+	color:white;
+}
+
+/*text inside input box*/
+.input-box input[type=password]
+{
+	padding-left: 13px;
+	font-size:21px;
+	color:white;
+}
+
+
+/*icons*/
+.bx
+{
+	position:absolute;
+	right:20px;
+	top:15px;
+	font-size: 17px;
+}
+
+
+.remember-forgot
+{
+	display: flex;
+	justify-content: space-around;
+	font-size:17px;
+	margin-bottom: 20px;
+}
+
+/*forgot link*/
+.remember-forgot a 
+{
+	color:white;
+	font-size: 17px;
+	text-decoration: none;
+}
+
+/*forgot link hover*/
+.remember-forgot a:hover
+{
+	text-decoration: underline;
+}
+
+/*login button main container*/
+.button-main
+{
+	display:flex;
+	justify-content: center;
+}
+
+/*login button*/
+.btn
+{
+
+	width:70%;
+	height:40px;
+	border:none;
+	outline:none;
+	border-radius: 49px;
+	font-size: 22px;
+	text-align: center;
+	font-family: poppins,sans-serif;
+	box-shadow:0 0 10px whitesmoke;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+
+/*button link*/
+.btn a
+{
+	text-decoration: none;
+	color:black;
+}
+
+/*signup section*/
+.signup
+{
+	word-spacing:2px;
+	margin-top:10px;
+	margin-bottom:20px;
+	text-align: center;
+}
+
+.signup a 
+{
+	margin-left: 6px;
+	color:white;
+	text-decoration: none;
+}
+
+.signup a:hover
+{
+	text-decoration: underline;
+}
+
+					/*footer*/
+.footer
+{
+	display: flex;
+	justify-content: space-between;
+	height:300px;
+	padding:50px 23px;
+	line-height:1.5;
+	font-size:23px;
+}
+.footer-section
+{
+	background-image: url(footer.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color:white;
+}
+.footer-section .footer h2
+{
+	font-size: 36px;
+}
